@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guarderia Beira Mar - Aulas de Vela e Esportes Náuticos em Salvador</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        /* Estilo customizado para a fonte Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Efeito de sobreposição para o hero section */
+        .hero-overlay::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- =========== Header =========== -->
+    <header id="home" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-sky-600">
+                Guarderia Beira Mar
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#servicos" class="text-slate-600 hover:text-sky-600 transition-colors">Serviços</a>
+                <a href="#sobre" class="text-slate-600 hover:text-sky-600 transition-colors">Sobre Nós</a>
+                <a href="#galeria" class="text-slate-600 hover:text-sky-600 transition-colors">Galeria</a>
+                <a href="#contato" class="text-slate-600 hover:text-sky-600 transition-colors">Contato</a>
+            </nav>
+            <a href="#contato" class="hidden md:block bg-amber-500 text-white font-bold py-2 px-5 rounded-lg shadow-md hover:bg-amber-600 transition-transform hover:scale-105">
+                Agende sua Aula
+            </a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-feather="menu" class="text-sky-600"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#servicos" class="block py-2 px-6 text-slate-600 hover:bg-sky-50">Serviços</a>
+            <a href="#sobre" class="block py-2 px-6 text-slate-600 hover:bg-sky-50">Sobre Nós</a>
+            <a href="#galeria" class="block py-2 px-6 text-slate-600 hover:bg-sky-50">Galeria</a>
+            <a href="#contato" class="block py-2 px-6 text-slate-600 hover:bg-sky-50">Contato</a>
+            <div class="p-4">
+                 <a href="#contato" class="w-full text-center block bg-amber-500 text-white font-bold py-2 px-5 rounded-lg shadow-md hover:bg-amber-600">
+                    Agende sua Aula
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- =========== Hero Section =========== -->
+        <section class="relative h-screen flex items-center justify-center text-white hero-overlay">
+            <img src="https://placehold.co/1920x1080/0284c7/FFFFFF?text=Velejando+em+Salvador" alt="Pessoa praticando windsurf em um mar azul e ensolarado" class="absolute top-0 left-0 w-full h-full object-cover">
+            <div class="relative z-10 text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight shadow-text">Aprenda a Velejar nas Águas Paradisíacas de Salvador</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-slate-200">Aulas para todos os níveis, equipamentos de ponta e a segurança de uma família com mais de 40 anos de experiência no mar.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#servicos" class="bg-sky-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-sky-700 transition-transform hover:scale-105 text-lg">
+                        Nossos Serviços
+                    </a>
+                    <a href="#contato" class="bg-amber-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-amber-600 transition-transform hover:scale-105 text-lg">
+                        Agende Agora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Serviços Section =========== -->
+        <section id="servicos" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nossos Esportes</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto mb-12">Oferecemos experiências incríveis para você se conectar com o mar da Bahia. Escolha sua aventura!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card Windsurf -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-sky-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-feather="wind" class="w-10 h-10 text-sky-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Windsurf</h3>
+                        <p class="text-slate-600">Sinta a emoção de deslizar sobre as águas com a força do vento. Aulas para iniciantes e avançados.</p>
+                    </div>
+                    <!-- Card Dingue -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                         <div class="bg-sky-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i data-feather="anchor" class="w-10 h-10 text-sky-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Vela (Dingue)</h3>
+                        <p class="text-slate-600">Aprenda os fundamentos da vela em nossos barcos monotipo. Perfeito para velejar com amigos ou família.</p>
+                    </div>
+                    <!-- Card Stand Up Paddle -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-sky-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-600"><path d="M14.5 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path><path d="M12 22c-3 0-5.5-1.5-5.5-3.5 0-.8.5-1.6 1.3-2.2.8-.6 1.7-1 2.7-1.3.3-.1.6-.2.8-.4.3-.2.6-.5.8-.8.3-.3.5-.7.6-1.1.2-.6.2-1.2.1-1.8-.1-.7-.3-1.4-.5-2-.3-.6-.7-1.2-1.2-1.7-1.3-1.4-2.5-3-2.5-5C9 1.5 10.5 0 12.5 0S16 1.5 16 3.5c0 2-1.2 3.6-2.5 5-.5.5-.9 1.1-1.2 1.7-.2.6-.4 1.3-.5 2-.1.6-.1 1.2.1 1.8.1.4.3.8.6 1.1.2.3.5.6.8.8.2.2.5.3.8.4 1 .3 1.9.7 2.7 1.3.8.6 1.3 1.4 1.3 2.2C17.5 20.5 15 22 12 22z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Stand Up Paddle</h3>
+                        <p class="text-slate-600">Remar pelas águas calmas da Ribeira é um exercício relaxante e uma ótima forma de apreciar a vista.</p>
+                    </div>
+                    <!-- Card Caiaque -->
+                    <div class="bg-slate-50 p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="bg-sky-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-600"><path d="M7.45 10.51 5.8 9.22a2 2 0 0 1-1.1-2.78l1.7-3.4a2 2 0 0 1 2.78-1.1l1.29 1.65"></path><path d="m10.12 16.29 1.65 1.29a2 2 0 0 0 2.78-1.1l3.4-1.7a2 2 0 0 0 1.1-2.78l-1.65-1.29"></path><path d="M14 19.5c-2.2.2-4.5-.4-6.5-2.5s-2.7-4.3-2.5-6.5"></path><path d="m15.5 5-10 10"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Caiaque</h3>
+                        <p class="text-slate-600">Explore a orla da Cidade Baixa no seu ritmo. Oferecemos caiaques individuais e duplos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Sobre Nós Section =========== -->
+        <section id="sobre" class="py-20 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/e2e8f0/334155?text=Família+Mesquita" alt="Foto da família Mesquita, proprietários da Guarderia Beira Mar" class="rounded-2xl shadow-2xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Uma Família Apaixonada pelo Mar</h2>
+                        <p class="text-slate-600 mb-4 text-lg">
+                            Nossa história com o mar de Salvador começou há mais de 40 anos com Bira Mesquita, um velejador experiente que passou sua paixão para os filhos, Matheus e Victor.
+                        </p>
+                        <p class="text-slate-600 mb-4">
+                            Hoje, nós três administramos a Guarderia Beira Mar com um único propósito: compartilhar a alegria e a liberdade que os esportes náuticos proporcionam. Para nós, cada aluno é parte da nossa grande família do mar.
+                        </p>
+                        <p class="text-slate-600 font-medium">
+                            Oferecemos não apenas aulas, mas uma experiência autêntica, com total segurança e o conhecimento de quem nasceu e cresceu nesta baía. Venha velejar conosco!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========== Galeria Section =========== -->
+        <section id="galeria" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Momentos na Guarderia</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto mb-12">Confira alguns registros das nossas aulas e da beleza da Baía de Todos-os-Santos.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform" src="https://placehold.co/500x700/0ea5e9/ffffff?text=Aula+de+Windsurf" alt="Aluno aprendendo windsurf"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform" src="https://placehold.co/500x500/fbbf24/ffffff?text=SUP+no+Pôr+do+Sol" alt="Pessoa no stand up paddle durante o pôr do sol"></div>
+                    </div>
+                    <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform" src="https://placehold.co/500x500/38bdf8/ffffff?text=Turma+de+Vela" alt="Grupo de alunos em um barco a vela"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform" src="https://placehold.co/500x700/f59e0b/ffffff?text=Passeio+de+Caiaque" alt="Dois caiaques na água"></div>
+                    </div>
+                     <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform" src="https://placehold.co/500x700/0284c7/ffffff?text=Manobra+Radical" alt="Velejador experiente fazendo manobra"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform" src="https://placehold.co/500x500/facc15/ffffff?text=Vista+da+Orla" alt="Vista da orla da Ribeira a partir do mar"></div>
+                    </div>
+                     <div class="grid gap-4">
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform" src="https://placehold.co/500x500/7dd3fc/ffffff?text=Confraternização" alt="Alunos e instrutores confraternizando"></div>
+                        <div><img class="h-auto max-w-full rounded-lg shadow-md hover:scale-105 transition-transform" src="https://placehold.co/500x700/ca8a04/ffffff?text=Equipamentos" alt="Equipamentos da guarderia organizados"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =========== Footer / Contato =========== -->
+    <footer id="contato" class="bg-slate-800 text-white pt-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Vamos Velejar?</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto">Envie uma mensagem, tire suas dúvidas ou venha nos fazer uma visita. Estamos te esperando!</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-8">
+                <!-- Informações de Contato -->
+                <div class="lg:w-1/3">
+                    <h3 class="text-2xl font-bold mb-6 text-amber-400">Nossos Contatos</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <i data-feather="map-pin" class="text-amber-400 mt-1 flex-shrink-0"></i>
+                            <div>
+                                <h4 class="font-bold">Localização</h4>
+                                <p class="text-slate-300">Av. Beira Mar, S/N - Ribeira, Salvador - BA, 40420-340</p>
+                                <a href="https://www.google.com/maps" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors mt-1 inline-block">Ver no mapa</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i data-feather="phone" class="text-amber-400 mt-1 flex-shrink-0"></i>
+                             <div>
+                                <h4 class="font-bold">WhatsApp</h4>
+                                <p class="text-slate-300">(71) 99710-0199</p>
+                                 <a href="https://wa.me/5571997100199" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors mt-1 inline-block">Enviar mensagem</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i data-feather="instagram" class="text-amber-400 mt-1 flex-shrink-0"></i>
+                             <div>
+                                <h4 class="font-bold">Instagram</h4>
+                                <a href="http://instagram.com/guarderiabeiramar/" target="_blank" class="text-sky-400 hover:text-sky-300 transition-colors">@guarderiabeiramar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulário de Contato -->
+                <div class="lg:w-2/3 bg-slate-700 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6">Mande uma Mensagem</h3>
+                     <form action="#" method="POST">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-slate-300 mb-2">Nome</label>
+                                <input type="text" id="name" name="name" class="w-full bg-slate-800 border border-slate-600 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-slate-300 mb-2">E-mail</label>
+                                <input type="email" id="email" name="email" class="w-full bg-slate-800 border border-slate-600 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-slate-300 mb-2">Mensagem</label>
+                            <textarea id="message" name="message" rows="4" class="w-full bg-slate-800 border border-slate-600 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-amber-500" required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full bg-amber-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-amber-600 transition-transform hover:scale-105">
+                                Enviar Mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-slate-400 border-t border-slate-700 mt-16 py-6">
+                <p>&copy; <span id="current-year"></span> Guarderia Beira Mar. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Ativar Feather Icons
+        feather.replace();
+
+        // Lógica do Menu Mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fechar menu mobile ao clicar em um link
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Atualizar ano no rodapé
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
