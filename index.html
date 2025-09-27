@@ -71,7 +71,7 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-slate-900/95 backdrop-blur-lg flex flex-col justify-center items-center space-y-8 transition-transform duration-500 -translate-y-full z-50">
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-full bg-slate-900/95 backdrop-blur-lg flex flex-col justify-center items-center space-y-8 transition-transform duration-500 -translate-y-full z-40">
         <a href="#servicos" class="text-white text-3xl font-bold">Aventuras</a>
         <a href="#sobre" class="text-white text-3xl font-bold">A Guarderia</a>
         <a href="#galeria" class="text-white text-3xl font-bold">Galeria</a>
@@ -81,15 +81,14 @@
     <main>
         <!-- =========== Hero Section with Video =========== -->
         <section id="home" class="relative h-screen flex items-center justify-center text-white hero-video-overlay overflow-hidden">
-            <!-- Coloque o link para o seu vídeo aqui. Use um vídeo curto e em loop. -->
+            <!-- ATUALIZE O LINK DO VÍDEO AQUI: Coloque o link para o seu vídeo no atributo 'src' abaixo. Use um vídeo curto e em loop. -->
             <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 z-0 object-cover">
-                <!-- Vídeo de exemplo. Substitua por um vídeo seu. -->
-                <source src="https://assets.mixkit.co/videos/preview/mixkit-man-windsurfing-in-the-sea-at-sunset-4634-large.mp4" type="video/mp4">
+                <!-- Vídeo de exemplo de ondas, de um provedor que permite o uso direto. -->
+                <source src="https://www.pexels.com/download/video/28312549/?fps=25.0&h=1080&w=1920.mp4" type="video/mp4">
             </video>
             <div class="relative z-10 text-center px-4">
                 <h1 class="text-5xl md:text-8xl font-black mb-4 uppercase text-shadow-strong">Sinta o Mar</h1>
-                <p class="text-xl md:text-2xl mb-2 text-slate-100 font-medium">Sua aventura náutica começa aqui.</p>
-                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 text-slate-300 font-light">Domine as ondas e os ventos na Baía de Todos-os-Santos.</p>
+                <p class="text-xl md:text-2xl mb-10 text-slate-100 font-medium">Domine as ondas e os ventos na Baía de Todos-os-Santos.</p>
                 <a href="#servicos" class="bg-cyan-400 text-slate-900 font-bold py-4 px-10 rounded-full shadow-xl hover:bg-cyan-300 transition-all hover:scale-105 text-xl uppercase">
                     Explorar
                 </a>
